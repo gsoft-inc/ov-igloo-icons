@@ -1,0 +1,41 @@
+{
+  "name": "@igloo-ui/icons",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint *.js",
+    "format": "prettier -w src/*",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsoft-inc/ov-igloo-icons.git"
+  },
+  "keywords": [
+    "igloo-ui",
+    "icons",
+    "officevibe"
+  ],
+  "author": "Groupe Officevibe Inc.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gsoft-inc/ov-igloo-icons/issues"
+  },
+  "homepage": "https://github.com/gsoft-inc/ov-igloo-icons#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.16.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.3.2"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
