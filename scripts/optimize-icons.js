@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
-const glob = require('glob');
 const camelCase = require('camelcase');
+
 const { optimize, extendDefaultPlugins } = require('svgo');
 
-const { ICONS_DIST_DIR, ICONS_SOURCE_DIR } = require('./constants');
+const { ICONS_DIST_DIR } = require('./constants');
 
 const config = {
   pretty: true,
@@ -57,26 +57,22 @@ const formatIconName = (filepath) => {
   return iconName;
 };
 
-const icons = glob.sync(`${ICONS_SOURCE_DIR}/**/*.svg`);
-
 if (!fs.existsSync(ICONS_DIST_DIR)) {
   fs.mkdirSync(ICONS_DIST_DIR, {
     recursive: true,
   });
 }
 
-const buildSvgs = () => {
-  console.log('\n⚙️  Icon optimization...');
+const optimizeIcons = (list) => {
+  console.log('\n⚙️  Icons optimization...');
 
-  return icons.map((filepath) => {
+  list.map((filepath) => {
     const icon = fs.readFileSync(filepath, 'utf-8');
     const optimizedIcon = optimize(icon, { path: filepath, ...config });
     const iconName = formatIconName(filepath);
 
     fs.writeFileSync(`${ICONS_DIST_DIR}/${iconName}.svg`, optimizedIcon.data);
-
-    return;
   });
 };
 
-module.exports = buildSvgs;
+module.exports = optimizeIcons;
