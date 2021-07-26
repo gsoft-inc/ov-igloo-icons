@@ -1,9 +1,10 @@
 {
   "name": "@igloo-ui/icons",
   "version": "0.0.0",
-  "description": "",
+  "description": "A set of icons handcrafted by Officevibe",
   "main": "dist/index.js",
   "scripts": {
+    "build": "node build.js",
     "lint": "eslint *.js",
     "format": "prettier -w src/*",
     "changeset": "changeset",
