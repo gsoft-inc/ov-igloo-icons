@@ -2,30 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const camelCase = require('camelcase');
 
-const { optimize, extendDefaultPlugins } = require('svgo');
+const { optimize } = require('svgo');
 
 const { ICONS_DIST_DIR } = require('./constants');
-
-const config = {
-  pretty: true,
-  multipass: true,
-  esModule: false,
-  plugins: extendDefaultPlugins([
-    { name: 'removeXMLNS', active: true },
-    { name: 'convertStyleToAttrs', active: true },
-    {
-      name: 'convertColors',
-      active: true,
-      params: {
-        currentColor: true,
-      },
-    },
-    { name: 'collapseGroups', active: false },
-    { name: 'sortAttrs', active: true },
-    { name: 'removeStyleElement', active: true },
-    { name: 'removeScriptElement', active: true },
-  ]),
-};
+const { config } = require('./config');
 
 const formatIconName = (filepath) => {
   if (!filepath) {
@@ -40,8 +20,7 @@ const formatIconName = (filepath) => {
     );
   }
 
-  // eslint-disable-next-line no-unused-vars
-  const [dir, size, name, status] = splitedPath;
+  const [, size, name, status] = splitedPath;
   const formatedName = camelCase(name);
   const formatedSize = size.slice(0, -2);
 

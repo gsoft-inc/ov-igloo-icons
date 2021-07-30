@@ -1,21 +1,52 @@
 const fs = require('fs');
 const path = require('path');
-const glob = require('glob');
 const camelCase = require('camelcase');
-const svgr = require('@svgr/core').default;
+const merge = require('lodash.merge');
+const { optimize } = require('svgo');
 
-const { COMPONENTS_DIR, ICONS_SOURCE_DIR } = require('./constants');
+const { ROOT_DIR } = require('./constants');
+const { config } = require('./config');
 
-const iconComponentTemplate = (
-  { template },
-  opts,
-  { imports, componentName, props, jsx, exports }
-) => {
-  return template.ast`
-    ${imports}
-    const ${componentName} = (${props}) => ${jsx}
-    ${exports}
-  `;
+const GENERATED_HEADER = '/* THIS FILE IS GENERATED. DO NOT EDIT IT. */';
+
+const iconComponentTemplate = (name, code) => {
+  return `${GENERATED_HEADER}
+import React from "react";
+import PropTypes from "prop-types";
+import parse from "html-react-parser";
+
+import getSvgProps from "./getSvgProps";
+
+/**
+ * Renders a <${name} /> component
+ *
+ * @param {Object} props
+ * @param {('small'|'medium'|'large')} [props.size=small] - the icon size
+ * @param {('grey500' | 'grey600' | 'base' | 'interactive')} [props.color=base] - the icon color
+ * @param {string} [props.ariaLabel] - the label for accessibility
+ */
+const ${name} = ({size, color, ariaLabel, className, ...other}) => {
+const svgData = ${JSON.stringify(code)}
+const props = getSvgProps({ size, color, ariaLabel, className, ...other });
+const icon = parse(svgData[props.iconSize], props.options);
+
+return <>{icon}</>;
+};
+
+${name}.propTypes = {
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+  color: PropTypes.oneOf(["grey500", "grey600", "base", "interactive"]),
+  ariaLabel: PropTypes.string,
+};
+
+${name}.defaultProps = {
+  size: "small",
+  color: "base",
+  ariaLabel: "",
+};
+
+export default ${name};
+`;
 };
 
 const formatComponentName = (filepath) => {
@@ -23,59 +54,70 @@ const formatComponentName = (filepath) => {
     return;
   }
 
-  const splitedPath = filepath.split(path.sep);
+  const filenamePattern = /(.+)\/([0-9]+)px\/(.+).svg$/;
 
-  if (splitedPath.length > 4) {
-    console.warn(
-      `${splitedPath.name} n'as pas un niveau de hiérarchie conforme `
+  if (!filenamePattern.test(filepath)) {
+    console.error(
+      `${filepath}: Invalid structure. please look in the figma for the structure to match size/icon name and export to svg folder (e.g. svg/16px/ICON NAME.svg).`
     );
   }
 
-  // eslint-disable-next-line no-unused-vars
-  const [dir, size, name, status] = splitedPath;
+  const [, , height, name] = filepath.match(filenamePattern);
+  const iconName = camelCase(name, { pascalCase: true });
 
-  let iconName;
-
-  if (splitedPath.length <= 3) {
-    // The term SVG is removed from the name with.slicc(0, -3);
-    iconName = `${name.slice(0, -3)}`;
-  } else {
-    iconName = `${name}${status}`;
-  }
-
-  return camelCase(iconName, { pascalCase: true });
+  return { name: iconName, height };
 };
 
-if (!fs.existsSync(COMPONENTS_DIR)) {
-  fs.mkdirSync(COMPONENTS_DIR, {
+if (!fs.existsSync(ROOT_DIR)) {
+  fs.mkdirSync(ROOT_DIR, {
     recursive: true,
-  });
+  }),
+    (err) => {
+      throw err;
+    };
 }
+
+const formatIconDatas = (list) => {
+  return list.map((filepath) => {
+    const icon = fs.readFileSync(filepath, 'utf-8');
+    const optimizedIcon = optimize(icon, { path: filepath, ...config });
+    const iconName = formatComponentName(filepath);
+    const iconPath = optimizedIcon.data.trim();
+    const { name, height } = iconName;
+
+    return {
+      name,
+      height,
+      path: iconPath,
+    };
+  });
+};
 
 const generateComponent = (list) => {
   console.log('\n📦 Components generation...');
-  list.map((filepath) => {
-    const icon = fs.readFileSync(filepath, 'utf-8');
-    const componentName = formatComponentName(filepath);
 
-    svgr(
-      icon,
-      {
-        template: iconComponentTemplate,
-        plugins: [
-          '@svgr/plugin-svgo',
-          '@svgr/plugin-jsx',
-          '@svgr/plugin-prettier',
-        ],
-        svgoConfig: {
-          plugins: [{ convertColors: { currentColor: true } }],
-        },
+  const iconsData = formatIconDatas(list);
+
+  const iconByName = iconsData.reduce((acc, icon) => {
+    return merge(acc, {
+      [icon.name]: {
+        name: icon.name,
+        heights: { [icon.height]: icon.path },
       },
-      { componentName }
-    ).then((componentCode) => {
-      fs.writeFileSync(`${COMPONENTS_DIR}/${componentName}.jsx`, componentCode);
     });
+  }, {});
+
+  Object.entries(iconByName).map(([key, icon]) => {
+    const name = `${camelCase(key, { pascalCase: true })}`;
+    const code = iconComponentTemplate(name, icon.heights);
+
+    fs.writeFileSync(`${ROOT_DIR}/${name}.jsx`, code);
   });
+
+  fs.copyFileSync(
+    path.join(__dirname, 'getSvgProps.js'),
+    path.join(__dirname, `../${ROOT_DIR}/getSvgProps.js`)
+  );
 };
 
 module.exports = generateComponent;

@@ -5,9 +5,10 @@
 .prettierrc.json
 .DS_Store
 
-tokens
+scripts
 assets
 docs
+svg
 storybook-static
 node_modules
 
