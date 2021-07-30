@@ -17,6 +17,8 @@ import parse from "html-react-parser";
 
 import getSvgProps from "./getSvgProps";
 
+import './icon.css';
+
 /**
  * Renders a <${name} /> component
  *
@@ -117,6 +119,11 @@ const generateComponent = (list) => {
   fs.copyFileSync(
     path.join(__dirname, 'getSvgProps.js'),
     path.join(__dirname, `../${ROOT_DIR}/getSvgProps.js`)
+  );
+
+  fs.copyFileSync(
+    path.join(__dirname, '../styles/icon.css'),
+    path.join(__dirname, `../${ROOT_DIR}/icon.css`)
   );
 };
 
