@@ -7,6 +7,10 @@ module.exports = {
   plugins: extendDefaultPlugins([
     { name: 'removeXMLNS', active: true },
     { name: 'convertStyleToAttrs', active: true },
+    { name: 'collapseGroups', active: false },
+    { name: 'sortAttrs', active: true },
+    { name: 'removeStyleElement', active: true },
+    { name: 'removeScriptElement', active: true },
     {
       name: 'convertColors',
       active: true,
@@ -14,9 +18,5 @@ module.exports = {
         currentColor: true,
       },
     },
-    { name: 'collapseGroups', active: false },
-    { name: 'sortAttrs', active: true },
-    { name: 'removeStyleElement', active: true },
-    { name: 'removeScriptElement', active: true },
   ]),
 };

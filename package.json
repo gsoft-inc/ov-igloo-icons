@@ -10,7 +10,9 @@
     "format": "prettier -w src/*",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -33,19 +35,26 @@
     "html-react-parser": "^1.2.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.8",
     "@changesets/cli": "^2.16.0",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/react": "^6.3.6",
     "@svgr/core": "^5.5.0",
     "@svgr/plugin-jsx": "^5.5.0",
     "@svgr/plugin-prettier": "^5.5.0",
     "@svgr/plugin-svgo": "^5.5.0",
+    "babel-loader": "^8.2.2",
     "camelcase": "^6.2.0",
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "lodash.merge": "^4.6.2",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "svgo": "^2.3.1"
   },
   "commitlint": {
