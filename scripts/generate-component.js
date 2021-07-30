@@ -15,7 +15,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import parse from "html-react-parser";
 
-import getSvgProps from "./getSvgProps";
+import { getSvgProps } from "./getSvgProps";
 
 import './icon.css';
 

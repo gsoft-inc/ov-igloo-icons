@@ -3,7 +3,13 @@ import cx from 'classnames';
 
 const sizeMap = { small: 16, medium: 24, large: 32 };
 
-const getSvgProps = ({ size, color, ariaLabel, className, ...other }) => {
+export const getSvgProps = ({
+  size,
+  color,
+  ariaLabel,
+  className,
+  ...other
+}) => {
   const colorName = color[0].toUpperCase() + color.substring(1);
   const colorClass = color !== 'base' && `ids-icon--color${colorName}`;
 
@@ -21,6 +27,10 @@ const getSvgProps = ({ size, color, ariaLabel, className, ...other }) => {
           </svg>
         );
       }
+
+      if (domNode.attribs.stroke === '#233043') {
+        return (domNode.attribs.stroke = 'currentColor');
+      }
     },
   };
 
@@ -29,5 +39,3 @@ const getSvgProps = ({ size, color, ariaLabel, className, ...other }) => {
     options,
   };
 };
-
-module.exports = getSvgProps;
