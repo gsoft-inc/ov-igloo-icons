@@ -9,6 +9,7 @@
     "format": "prettier -w src/*",
     "changeset": "changeset",
     "version-packages": "changeset version",
+    "release": "yarn build && changeset publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
