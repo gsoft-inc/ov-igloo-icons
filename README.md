@@ -1,6 +1,6 @@
 # `@igloo-ui/icons`
 
-Igloo icons ..
+A set of icons handcrafted by Officevibe
 
 ## Getting started
 
