@@ -6,6 +6,7 @@ const { optimize } = require('svgo');
 
 const { ROOT_DIR } = require('./constants');
 const { config } = require('./config');
+const { formatComponentName } = require('./helper');
 
 const GENERATED_HEADER = '/* THIS FILE IS GENERATED. DO NOT EDIT IT. */';
 
@@ -42,32 +43,13 @@ ${name}.propTypes = {
 };
 
 ${name}.defaultProps = {
-  size: "small",
+  size: "medium",
   color: "base",
   ariaLabel: "",
 };
 
 export default ${name};
 `;
-};
-
-const formatComponentName = (filepath) => {
-  if (!filepath) {
-    return;
-  }
-
-  const filenamePattern = /(.+)\/([0-9]+)px\/(.+).svg$/;
-
-  if (!filenamePattern.test(filepath)) {
-    console.error(
-      `${filepath}: Invalid structure. please look in the figma for the structure to match size/icon name and export to svg folder (e.g. svg/16px/ICON NAME.svg).`
-    );
-  }
-
-  const [, , height, name] = filepath.match(filenamePattern);
-  const iconName = camelCase(name, { pascalCase: true });
-
-  return { name: iconName, height };
 };
 
 if (!fs.existsSync(ROOT_DIR)) {

@@ -1,6 +1,8 @@
 import React from 'react';
 
 import AddCalendar from '../dist/AddCalendar';
+import Copy from '../dist/Copy';
+import * as Icon from '../iconsList';
 
 export default {
   component: AddCalendar,
@@ -23,6 +25,11 @@ export const colored = () => (
       <AddCalendar color="grey500" size="large" />
     </div>
     <div style={{ display: 'flex', alignItems: 'flex-end' }}>
+      <AddCalendar color="grey500" />
+      <AddCalendar color="grey500" size="medium" />
+      <AddCalendar color="grey500" size="large" />
+    </div>
+    <div style={{ display: 'flex', alignItems: 'flex-end' }}>
       <AddCalendar color="grey600" />
       <AddCalendar color="grey600" size="medium" />
       <AddCalendar color="grey600" size="large" />
@@ -37,5 +44,13 @@ export const colored = () => (
       <AddCalendar color="interactive" size="medium" />
       <AddCalendar color="interactive" size="large" />
     </div>
+  </>
+);
+
+export const other = () => (
+  <>
+    <Copy />
+    <Icon.Team />
+    <Icon.TeamSolid />
   </>
 );
