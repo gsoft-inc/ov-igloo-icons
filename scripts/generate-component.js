@@ -31,8 +31,13 @@ import './icon.css';
 const ${name} = ({size, color, ariaLabel, className, ...other}) => {
 const svgData = ${JSON.stringify(code)}
 const props = getSvgProps({ size, color, ariaLabel, className, ...other });
-const icon = parse(svgData[props.iconSize], props.options);
 
+if (svgData[props.iconSize] === undefined) {
+  console.warn('this icon is not available in this size');
+  return <span className="empty"></span>;
+}
+
+const icon = parse(svgData[props.iconSize], props.options);
 return <>{icon}</>;
 };
 

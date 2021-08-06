@@ -1,0 +1,55 @@
+.icon-render {
+  padding: 2rem;
+}
+
+.icon-section {
+  margin-bottom: 4rem;
+}
+
+.icon-section__title {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.icon-section__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 7rem;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  max-width: 7rem;
+  margin: 0.5rem;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 4px;
+}
+
+.icon-card__icon {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.icon-card__description {
+  max-width: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  color: rgb(100, 100, 100);
+  padding-bottom: 0.25rem;
+}
+
+.empty {
+  display: block;
+  background-color: #df5151;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
