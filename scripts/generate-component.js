@@ -25,12 +25,11 @@ import './icon.css';
  *
  * @param {Object} props
  * @param {('small'|'medium'|'large')} [props.size=small] - the icon size
- * @param {('grey500' | 'grey600' | 'base' | 'interactive')} [props.color=base] - the icon color
  * @param {string} [props.ariaLabel] - the label for accessibility
  */
-const ${name} = ({size, color, ariaLabel, className, ...other}) => {
+const ${name} = ({size, ariaLabel, className, ...other}) => {
 const svgData = ${JSON.stringify(code)}
-const props = getSvgProps({ size, color, ariaLabel, className, ...other });
+const props = getSvgProps({ size, ariaLabel, className, ...other });
 
 if (svgData[props.iconSize] === undefined) {
   console.warn('this icon is not available in this size');
@@ -43,13 +42,11 @@ return <>{icon}</>;
 
 ${name}.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
-  color: PropTypes.oneOf(["grey500", "grey600", "base", "interactive"]),
   ariaLabel: PropTypes.string,
 };
 
 ${name}.defaultProps = {
   size: "medium",
-  color: "base",
   ariaLabel: "",
 };
 

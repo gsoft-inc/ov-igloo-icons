@@ -11,10 +11,11 @@ export const getSvgProps = ({
   className,
   ...other
 }) => {
-  const colorName = color[0].toUpperCase() + color.substring(1);
-  const colorClass = color !== 'base' && `ids-icon--color${colorName}`;
+  // const colorName = color[0].toUpperCase() + color.substring(1);
+  // const colorClass = color !== 'base' && `ids-icon--color${colorName}`;
 
-  const classes = cx(`ids-icon`, colorClass, className);
+  // const classes = cx(`ids-icon`, colorClass, className);
+  const classes = cx(`ids-icon`, className);
 
   const options = {
     replace: (domNode) => {

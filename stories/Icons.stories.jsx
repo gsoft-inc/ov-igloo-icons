@@ -3,11 +3,11 @@ import React from 'react';
 import * as Icon from '../iconsList';
 
 export default {
-  component: Icon,
-  title: 'Components/Icon',
+  component: 'Igloo Icons',
+  title: 'Icons',
 };
 
-export const all = () => {
+export const List = () => {
   const iconsList = Icon.iconName;
 
   const ListIcon = ({ size }) => {
