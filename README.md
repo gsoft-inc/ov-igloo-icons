@@ -18,12 +18,81 @@ yarn add @igloo-ui/icons
 
 ## Usage
 
-```
-import React from 'react'
-import Alert from '@igloo-ui/icons/dist/Alert'
+Icons in this package support the following sizes: `16`, `24`, and `32` pixels. You can import an icon component into your project by referring to its name:
 
-<Alert />
+```js
+import Alert from '@igloo-ui/icons/dist/Alert';
+
+function MyComponent() {
+  return (
+    <>
+      <Alert /> Uh oh, something went wrong
+    </>
+  );
+}
 ```
+
+### Changing the size
+
+You can change the size of an icon by passing a prop `size` which takes `small`, `medium` and `large`. For example:
+
+```js
+import Clock from '@igloo-ui/icons/dist/Calendar';
+
+function MyComponent() {
+  return (
+    <>
+      <Calendar size="large" /> Monday, Feb 2022
+    </>
+  );
+}
+```
+
+| Prop     | Rendered Size                |
+| -------- | ---------------------------- |
+| `small`  | 16px                         |
+| `medium` | 24px is the **default** size |
+| `Large`  | 32px                         |
+
+### Changing the color
+
+You can change the color of an icon by passing in a custom class name that sets this property. For example:
+
+```css
+@import '@igloo-ui/tokens/dist/variables.css';
+
+.my-custom-class {
+  color: var(--dandelion-600);
+}
+```
+
+```js
+import Alert from '@igloo-ui/icons/dist/Alert';
+
+function MyComponent() {
+  return (
+    <>
+      <Alert className="my-custom-class" /> Uh oh, something went wrong
+    </>
+  );
+}
+```
+
+### Accessibility
+
+If the icon used without text, then use the `ariaLabel` prop to give the icon a text alternative. The label should describe the icon.
+
+```js
+import Alert from '@igloo-ui/icons/dist/Alert';
+
+function MyComponent() {
+  return <Alert ariaLabel=" Uh oh, something went wrong" />;
+}
+```
+
+## SVG files
+
+For projects that don’t use React, icons are also available as \*.svg files in the `dist/svg` folder.
 
 ## License
 
