@@ -1,6 +1,7 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="3.33328" y="6.66675" width="9.33333" height="6.66667" rx="0.333333" stroke="#233043" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.33328 5.33341C5.33328 3.86066 6.52719 2.66675 7.99995 2.66675V2.66675C9.47271 2.66675 10.6666 3.86066 10.6666 5.33341V6.63667C10.6666 6.65328 10.6532 6.66675 10.6365 6.66675H5.36336C5.34675 6.66675 5.33328 6.65328 5.33328 6.63667V5.33341Z" stroke="#233043" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="7.99995" cy="9.33342" r="0.666667" fill="#233043"/>
-<path d="M7.99996 9.33325L8.9878 10.815C9.13548 11.0365 8.97669 11.3333 8.71045 11.3333H7.28947C7.02323 11.3333 6.86444 11.0365 7.01211 10.815L7.99996 9.33325Z" fill="#233043"/>
+<path d="M10.75 6V5.75C10.75 4.23122 9.51878 3 8 3V3C6.48122 3 5.25 4.23122 5.25 5.75V6" stroke="#233043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="path-2-inside-1" fill="white">
+<rect x="3" y="6" width="10" height="8" rx="0.75"/>
+</mask>
+<rect x="3" y="6" width="10" height="8" rx="0.75" stroke="#233043" stroke-width="3" mask="url(#path-2-inside-1)"/>
 </svg>

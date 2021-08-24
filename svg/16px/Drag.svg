@@ -1,8 +1,8 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="5.66722" cy="4.33398" r="1" fill="#233043"/>
-<circle cx="10.3333" cy="4.33337" r="1" fill="#233043"/>
-<circle cx="5.66666" cy="8" r="1" fill="#233043"/>
-<circle cx="5.66666" cy="11.6667" r="1" fill="#233043"/>
-<circle cx="10.3333" cy="8.00012" r="1" fill="#233043"/>
-<circle cx="10.3333" cy="11.6666" r="1" fill="#233043"/>
+<circle cx="6.00009" cy="4" r="1" fill="#233043"/>
+<circle cx="6" cy="8" r="1" fill="#233043"/>
+<circle cx="6" cy="12" r="1" fill="#233043"/>
+<circle cx="10.0001" cy="4" r="1" fill="#233043"/>
+<circle cx="10" cy="8" r="1" fill="#233043"/>
+<circle cx="10" cy="12" r="1" fill="#233043"/>
 </svg>

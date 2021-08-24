@@ -18,7 +18,12 @@ yarn add @igloo-ui/icons
 
 ## Usage
 
-...
+```
+import React from 'react'
+import Alert from '@igloo-ui/icons/dist/Alert'
+
+<Alert />
+```
 
 ## License
 
