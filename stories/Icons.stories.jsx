@@ -1,10 +1,16 @@
 import React from 'react';
 
 import * as Icon from '../iconsList';
+import Readme from '../README.md';
 
 export default {
   component: 'Igloo Icons',
   title: 'Icons',
+  parameters: {
+    docs: {
+      page: () => <Readme />,
+    },
+  },
 };
 
 export const List = () => {
