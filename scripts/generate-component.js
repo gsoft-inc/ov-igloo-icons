@@ -6,6 +6,7 @@ const { optimize } = require('svgo');
 
 const { ROOT_DIR } = require('./constants');
 const { config } = require('./config');
+const { formatComponentName } = require('./helper');
 
 const GENERATED_HEADER = '/* THIS FILE IS GENERATED. DO NOT EDIT IT. */';
 
@@ -24,50 +25,33 @@ import './icon.css';
  *
  * @param {Object} props
  * @param {('small'|'medium'|'large')} [props.size=small] - the icon size
- * @param {('grey500' | 'grey600' | 'base' | 'interactive')} [props.color=base] - the icon color
  * @param {string} [props.ariaLabel] - the label for accessibility
  */
-const ${name} = ({size, color, ariaLabel, className, ...other}) => {
+const ${name} = ({size, ariaLabel, className, ...other}) => {
 const svgData = ${JSON.stringify(code)}
-const props = getSvgProps({ size, color, ariaLabel, className, ...other });
-const icon = parse(svgData[props.iconSize], props.options);
+const props = getSvgProps({ size, ariaLabel, className, ...other });
 
+if (svgData[props.iconSize] === undefined) {
+  console.warn('this icon is not available in this size');
+  return <span className="empty"></span>;
+}
+
+const icon = parse(svgData[props.iconSize], props.options);
 return <>{icon}</>;
 };
 
 ${name}.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
-  color: PropTypes.oneOf(["grey500", "grey600", "base", "interactive"]),
   ariaLabel: PropTypes.string,
 };
 
 ${name}.defaultProps = {
-  size: "small",
-  color: "base",
+  size: "medium",
   ariaLabel: "",
 };
 
 export default ${name};
 `;
-};
-
-const formatComponentName = (filepath) => {
-  if (!filepath) {
-    return;
-  }
-
-  const filenamePattern = /(.+)\/([0-9]+)px\/(.+).svg$/;
-
-  if (!filenamePattern.test(filepath)) {
-    console.error(
-      `${filepath}: Invalid structure. please look in the figma for the structure to match size/icon name and export to svg folder (e.g. svg/16px/ICON NAME.svg).`
-    );
-  }
-
-  const [, , height, name] = filepath.match(filenamePattern);
-  const iconName = camelCase(name, { pascalCase: true });
-
-  return { name: iconName, height };
 };
 
 if (!fs.existsSync(ROOT_DIR)) {

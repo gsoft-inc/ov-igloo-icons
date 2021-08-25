@@ -1,4 +1,4 @@
-const ICONS_SOURCE_DIR = 'svg';
+const ICONS_SOURCE_DIR = 'icon';
 const ROOT_DIR = 'dist';
 const ICONS_DIST_DIR = `${ROOT_DIR}/svg`;
 

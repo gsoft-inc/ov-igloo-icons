@@ -6,13 +6,14 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "yarn clean && node build.js",
+    "deploy": "yarn build-storybook && gh-pages -d storybook-static",
     "lint": "eslint *.js",
     "format": "prettier -w src/*",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "yarn build && changeset publish",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -s public -p 6006 --no-manager-cache",
+    "build-storybook": "build-storybook -s public"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,7 @@
     "camelcase": "^6.2.0",
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
+    "gh-pages": "^3.2.3",
     "lodash.merge": "^4.6.2",
     "prettier": "^2.3.2",
     "react": "^17.0.2",

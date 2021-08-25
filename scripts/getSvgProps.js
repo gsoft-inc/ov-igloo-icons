@@ -2,6 +2,7 @@ import { attributesToProps, domToReact } from 'html-react-parser';
 import cx from 'classnames';
 
 const sizeMap = { small: 16, medium: 24, large: 32 };
+const FIGMA_ICON_COLOR = '#233043';
 
 export const getSvgProps = ({
   size,
@@ -10,10 +11,11 @@ export const getSvgProps = ({
   className,
   ...other
 }) => {
-  const colorName = color[0].toUpperCase() + color.substring(1);
-  const colorClass = color !== 'base' && `ids-icon--color${colorName}`;
+  // const colorName = color[0].toUpperCase() + color.substring(1);
+  // const colorClass = color !== 'base' && `ids-icon--color${colorName}`;
 
-  const classes = cx(`ids-icon`, colorClass, className);
+  // const classes = cx(`ids-icon`, colorClass, className);
+  const classes = cx(`ids-icon`, className);
 
   const options = {
     replace: (domNode) => {
@@ -28,8 +30,12 @@ export const getSvgProps = ({
         );
       }
 
-      if (domNode.attribs.stroke === '#233043') {
+      if (domNode.attribs.stroke === FIGMA_ICON_COLOR) {
         return (domNode.attribs.stroke = 'currentColor');
+      }
+
+      if (domNode.attribs.fill === FIGMA_ICON_COLOR) {
+        return (domNode.attribs.fill = 'currentColor');
       }
     },
   };

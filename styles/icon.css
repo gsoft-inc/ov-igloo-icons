@@ -11,13 +11,3 @@
   overflow: hidden;
   color: var(--icon-color);
 }
-
-.ids-icon--colorGrey500 {
-  --icon-color: var(--grey-500);
-}
-.ids-icon--colorGrey600 {
-  --icon-color: var(--grey-600);
-}
-.ids-icon--colorInteractive {
-  --icon-color: var(--electric-blue-500);
-}
