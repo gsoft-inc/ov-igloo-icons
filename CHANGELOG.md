@@ -1,5 +1,13 @@
 # @igloo-ui/icons
 
+## 0.1.0
+
+### Minor Changes
+
+- 12c9ff2: Add new icons `16`, `24` and `32px`
+  Add README.md
+  Update storybook with new theme and docs page
+
 ## 0.0.2
 
 ### Patch Changes
