@@ -1,0 +1,13 @@
+@import '~@igloo-ui/tokens/dist/variables.css';
+
+:root {
+  --icon-color: var(--grey-800, #000);
+}
+
+.ids-icon {
+  display: inline-block;
+  vertical-align: text-bottom;
+  user-select: none;
+  overflow: hidden;
+  color: var(--icon-color);
+}
