@@ -16,9 +16,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import parse from "html-react-parser";
 
-import { getSvgProps } from "./getSvgProps";
+import { getSvgProps } from "./scripts/get-svg-props";
 
-import './icon.css';
+import './styles/icon.css';
 
 /**
  * Renders a <${name} /> component
@@ -99,16 +99,6 @@ const generateComponent = (list) => {
 
     fs.writeFileSync(`${COMPONENTS_DIR}/${name}.jsx`, code);
   });
-
-  fs.copyFileSync(
-    path.join(__dirname, 'getSvgProps.js'),
-    path.join(__dirname, `../${COMPONENTS_DIR}/getSvgProps.js`)
-  );
-
-  fs.copyFileSync(
-    path.join(__dirname, '../styles/icon.css'),
-    path.join(__dirname, `../${COMPONENTS_DIR}/icon.css`)
-  );
 };
 
 module.exports = generateComponent;
