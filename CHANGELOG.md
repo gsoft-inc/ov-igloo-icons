@@ -2,6 +2,12 @@
 
 ## 0.2.0
 
+### Patch Changes
+
+- cf9d9d0: Fix the missing folder error during publish
+
+## 0.2.0
+
 ### Minor Changes
 
 - 2c0e20e: Compile files with babel
