@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.2.0
+
+### Minor Changes
+
+- 2c0e20e: Compile files with babel
+
 ## 0.1.1
 
 ### Patch Changes
