@@ -4,7 +4,7 @@ const camelCase = require('camelcase');
 const merge = require('lodash.merge');
 const { optimize } = require('svgo');
 
-const { ROOT_DIR } = require('./constants');
+const { COMPONENTS_DIR } = require('./constants');
 const { config } = require('./config');
 const { formatComponentName } = require('./helper');
 
@@ -54,8 +54,8 @@ export default ${name};
 `;
 };
 
-if (!fs.existsSync(ROOT_DIR)) {
-  fs.mkdirSync(ROOT_DIR, {
+if (!fs.existsSync(COMPONENTS_DIR)) {
+  fs.mkdirSync(COMPONENTS_DIR, {
     recursive: true,
   }),
     (err) => {
@@ -97,17 +97,17 @@ const generateComponent = (list) => {
     const name = `${camelCase(key, { pascalCase: true })}`;
     const code = iconComponentTemplate(name, icon.heights);
 
-    fs.writeFileSync(`${ROOT_DIR}/${name}.jsx`, code);
+    fs.writeFileSync(`${COMPONENTS_DIR}/${name}.jsx`, code);
   });
 
   fs.copyFileSync(
     path.join(__dirname, 'getSvgProps.js'),
-    path.join(__dirname, `../${ROOT_DIR}/getSvgProps.js`)
+    path.join(__dirname, `../${COMPONENTS_DIR}/getSvgProps.js`)
   );
 
   fs.copyFileSync(
     path.join(__dirname, '../styles/icon.css'),
-    path.join(__dirname, `../${ROOT_DIR}/icon.css`)
+    path.join(__dirname, `../${COMPONENTS_DIR}/icon.css`)
   );
 };
 
