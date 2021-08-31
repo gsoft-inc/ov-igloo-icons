@@ -5,9 +5,13 @@
 .prettierrc.json
 .DS_Store
 
+.storybook
+stories
+
 scripts
 assets
 public
+icon
 docs
 svg
 storybook-static

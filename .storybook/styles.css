@@ -47,9 +47,13 @@
 }
 
 .empty {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(100, 100, 100);
+}
+
+.empty:after {
   display: block;
-  background-color: #df5151;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 0.5rem;
+  width: 100%;
+  content: 'Not available';
 }
