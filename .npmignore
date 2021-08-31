@@ -9,11 +9,12 @@
 stories
 
 scripts
+components
 assets
 public
 icon
 docs
-svg
+icon
 storybook-static
 node_modules
 

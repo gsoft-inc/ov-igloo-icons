@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "yarn clean && node build.js",
+    "build": "yarn clean && node build.js && yarn babel",
+    "babel": "babel components --out-dir dist --copy-files",
     "deploy": "yarn build-storybook && gh-pages -d storybook-static",
     "lint": "eslint *.js",
     "format": "prettier -w src/*",
@@ -36,7 +37,10 @@
     "html-react-parser": "^1.2.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
     "@changesets/cli": "^2.16.0",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
