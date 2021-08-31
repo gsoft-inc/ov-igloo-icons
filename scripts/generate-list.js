@@ -15,7 +15,7 @@ const generateList = (list) => {
   const cleanIconList = removeDuplicates(listOfIcons);
 
   const iconImport = cleanIconList
-    .map((icon) => `export { default as ${icon} } from './dist/${icon}.jsx';`)
+    .map((icon) => `export { default as ${icon} } from './dist/${icon}.js';`)
     .join('\n');
 
   fs.writeFileSync(
