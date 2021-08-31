@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.1.1
+
+### Patch Changes
+
+- b2a1635: Remove the storybook and icon folder from the package
+
 ## 0.1.0
 
 ### Minor Changes
