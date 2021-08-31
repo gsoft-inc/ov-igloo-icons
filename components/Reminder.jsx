@@ -3,9 +3,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import parse from "html-react-parser";
 
-import { getSvgProps } from "./getSvgProps";
+import { getSvgProps } from "./scripts/get-svg-props";
 
-import './icon.css';
+import './styles/icon.css';
 
 /**
  * Renders a <Reminder /> component
