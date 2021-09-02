@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.2.1
+
+### Patch Changes
+
+- cf9d9d0: Fix the missing folder error during publish
+
 ## 0.2.0
 
 ### Minor Changes
