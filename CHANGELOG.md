@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.3.0
+
+### Minor Changes
+
+- 786dc77: Added missing icons from the rebrand icon standardization
+
 ## 0.2.2
 
 ### Patch Changes
