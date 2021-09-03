@@ -1,4 +1,3 @@
-// const glob = require('glob');
 const { getAllFiles } = require('./scripts/helper');
 
 const optimizeIcons = require('./scripts/optimize-icons');
@@ -7,7 +6,6 @@ const generateList = require('./scripts/generate-list');
 
 const { ICONS_SOURCE_DIR } = require('./scripts/constants');
 
-// const icons = glob.sync(`${ICONS_SOURCE_DIR}/**/*.svg`);
 const icons = getAllFiles(ICONS_SOURCE_DIR);
 
 console.log('\nBuild started...');
