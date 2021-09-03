@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.2.2
+
+### Patch Changes
+
+- efed6a5: Fix/cross plateform build
+
 ## 0.2.1
 
 ### Patch Changes
