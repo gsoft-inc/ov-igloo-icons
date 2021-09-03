@@ -1,6 +1,24 @@
 const camelCase = require('camelcase');
+const fs = require('fs');
+const path = require('path');
 
-const filenamePattern = /(.+)\/([0-9]+)px\/(.+).svg$/;
+const filenamePattern = /(.+)[\/|\\]([0-9]+)px[\/|\\](.+).svg$/;
+
+const getAllFiles = (dirPath, arrayOfFiles) => {
+  files = fs.readdirSync(dirPath);
+
+  arrayOfFiles = arrayOfFiles || [];
+
+  files.forEach((file) => {
+    if (fs.statSync(dirPath + '/' + file).isDirectory()) {
+      arrayOfFiles = getAllFiles(dirPath + '/' + file, arrayOfFiles);
+    } else {
+      arrayOfFiles.push(path.join(dirPath, '/', file));
+    }
+  });
+
+  return arrayOfFiles;
+};
 
 const removeDuplicates = (data) => {
   return [...new Set(data)];
@@ -30,5 +48,6 @@ const formatComponentName = (filepath) => {
   return { name: iconName, height };
 };
 
+exports.getAllFiles = getAllFiles;
 exports.formatComponentName = formatComponentName;
 exports.removeDuplicates = removeDuplicates;

@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 const camelCase = require('camelcase');
 const merge = require('lodash.merge');
 const { optimize } = require('svgo');
