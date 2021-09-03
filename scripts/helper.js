@@ -2,7 +2,7 @@ const camelCase = require('camelcase');
 const fs = require('fs');
 const path = require('path');
 
-const filenamePattern = /(.+)\/([0-9]+)px\/(.+).svg$/;
+const filenamePattern = /(.+)[\/|\\]([0-9]+)px[\/|\\](.+).svg$/;
 
 const getAllFiles = (dirPath, arrayOfFiles) => {
   files = fs.readdirSync(dirPath);
