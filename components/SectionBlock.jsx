@@ -15,7 +15,7 @@ import './styles/icon.css';
  * @param {string} [props.ariaLabel] - the label for accessibility
  */
 const SectionBlock = ({size, ariaLabel, className, ...other}) => {
-const svgData = {"32":"<svg width=\"32\" height=\"32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M25.5 9h-19a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h19a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM6 18h20M6 23h20\" stroke=\"#233043\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"}
+const svgData = {"16":"<svg width=\"24\" height=\"24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M19.125 6.75H4.875a.375.375 0 0 0-.375.375v2.25c0 .207.168.375.375.375h14.25a.375.375 0 0 0 .375-.375v-2.25a.375.375 0 0 0-.375-.375zM4.5 13.5h15M4.5 17.25h15\" stroke=\"#233043\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>","24":"<svg width=\"24\" height=\"24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M19.125 6.75H4.875a.375.375 0 0 0-.375.375v2.25c0 .207.168.375.375.375h14.25a.375.375 0 0 0 .375-.375v-2.25a.375.375 0 0 0-.375-.375zM4.5 13.5h15M4.5 17.25h15\" stroke=\"#233043\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>","32":"<svg width=\"32\" height=\"32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M25.5 9h-19a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h19a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM6 18h20M6 23h20\" stroke=\"#233043\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"}
 const props = getSvgProps({ size, ariaLabel, className, ...other });
 
 if (svgData[props.iconSize] === undefined) {
