@@ -1,5 +1,12 @@
 # @igloo-ui/icons
 
+## 0.4.0
+
+### Minor Changes
+
+- d76c191: Update all icons
+  remove color property from icon
+
 ## 0.3.0
 
 ### Minor Changes
