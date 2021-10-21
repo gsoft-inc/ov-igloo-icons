@@ -15,7 +15,7 @@
     "release": "yarn build && changeset publish",
     "storybook": "start-storybook -s public -p 6006 --no-manager-cache",
     "build-storybook": "build-storybook -s public",
-    "chormatic": "npx chromatic --project-token=eb3412a9c05f"
+    "chromatic": "npx chromatic --project-token=eb3412a9c05f"
   },
   "repository": {
     "type": "git",
