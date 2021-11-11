@@ -67,7 +67,7 @@ const checkSameName = (data) => {
 const handleName = (file) => {
   const splitPath = file.split(path.sep);
   const fileName = splitPath[splitPath.length - 1].replace('.svg', '');
-  const [_, group] = splitPath;
+  const [, group] = splitPath;
 
   const options = { pascalCase: true };
   const formatedName =
