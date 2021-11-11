@@ -1,5 +1,12 @@
 # @igloo-ui/icons
 
+## 0.5.0
+
+### Minor Changes
+
+- cebad6f: - Refactor build process
+  - Fix the icon size for standard
+
 ## 0.4.0
 
 ### Minor Changes
