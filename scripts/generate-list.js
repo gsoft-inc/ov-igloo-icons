@@ -1,27 +1,23 @@
 const fs = require('fs');
-const camelCase = require('camelcase');
-const { formatComponentName, removeDuplicates } = require('./helper');
+const { removeDuplicates } = require('./helper');
 
-const generateList = (list) => {
-  const listOfIcons = list.map((filepath) => {
-    const { name } = formatComponentName(filepath);
+const generateList = (icons) => {
+  console.log('\n📋 List of icons generation...');
 
-    const formatedName = camelCase(name, {
-      pascalCase: true,
-    });
-    return formatedName;
-  });
+  const listOfName = icons.map((icon) => icon.name);
 
-  const cleanIconList = removeDuplicates(listOfIcons);
+  const iconList = removeDuplicates(listOfName);
 
-  const iconImport = cleanIconList
+  const iconImport = iconList
     .map((icon) => `export { default as ${icon} } from './dist/${icon}.js';`)
     .join('\n');
 
   fs.writeFileSync(
     `iconsList.js`,
-    `${iconImport}\nexport const iconName = ${JSON.stringify(cleanIconList)}`
+    `${iconImport}\nexport const iconName = ${JSON.stringify(iconList)}`
   );
+
+  console.log('✨ The List has been saved!');
 };
 
 module.exports = generateList;

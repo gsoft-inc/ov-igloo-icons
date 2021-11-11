@@ -1,11 +1,9 @@
 const fs = require('fs');
 const camelCase = require('camelcase');
 const merge = require('lodash.merge');
-const { optimize } = require('svgo');
 
 const { COMPONENTS_DIR } = require('./constants');
-const { config } = require('./config');
-const { formatComponentName } = require('./helper');
+const { checkFolderExist } = require('./helper');
 
 const GENERATED_HEADER = '/* THIS FILE IS GENERATED. DO NOT EDIT IT. */';
 
@@ -53,41 +51,16 @@ export default ${name};
 `;
 };
 
-if (!fs.existsSync(COMPONENTS_DIR)) {
-  fs.mkdirSync(COMPONENTS_DIR, {
-    recursive: true,
-  }),
-    (err) => {
-      throw err;
-    };
-}
+const generateComponent = (icons) => {
+  checkFolderExist(COMPONENTS_DIR);
 
-const formatIconDatas = (list) => {
-  return list.map((filepath) => {
-    const icon = fs.readFileSync(filepath, 'utf-8');
-    const optimizedIcon = optimize(icon, { path: filepath, ...config });
-    const iconName = formatComponentName(filepath);
-    const iconPath = optimizedIcon.data.trim();
-    const { name, height } = iconName;
-
-    return {
-      name,
-      height,
-      path: iconPath,
-    };
-  });
-};
-
-const generateComponent = (list) => {
   console.log('\n📦 Components generation...');
 
-  const iconsData = formatIconDatas(list);
-
-  const iconByName = iconsData.reduce((acc, icon) => {
+  const iconByName = icons.reduce((acc, icon) => {
     return merge(acc, {
       [icon.name]: {
         name: icon.name,
-        heights: { [icon.height]: icon.path },
+        heights: { [icon.group]: icon.data.trim() },
       },
     });
   }, {});
@@ -98,6 +71,8 @@ const generateComponent = (list) => {
 
     fs.writeFileSync(`${COMPONENTS_DIR}/${name}.jsx`, code);
   });
+
+  console.log('✨ Components has been saved!');
 };
 
 module.exports = generateComponent;
