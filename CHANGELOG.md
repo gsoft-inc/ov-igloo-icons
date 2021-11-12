@@ -1,5 +1,12 @@
 # @igloo-ui/icons
 
+## 0.6.1
+
+### Patch Changes
+
+- 8337031: Fix icon with a mask that is not displayed.
+  **Validate in Figma that the content clip is unchecked**
+
 ## 0.6.0
 
 ### Minor Changes
