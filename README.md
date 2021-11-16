@@ -56,7 +56,13 @@ function MyComponent() {
 
 ### Changing the color
 
-You can change the color of an icon by passing in a custom class name that sets this property. For example:
+You can change the color of an icon by passing in a custom class name that sets this property.
+
+First install tokens
+
+`yarn add @igloo-ui/tokens`
+
+For example:
 
 ```css
 @import '@igloo-ui/tokens/dist/variables.css';

@@ -2000,10 +2000,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@igloo-ui/tokens@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@igloo-ui/tokens/-/tokens-0.1.1.tgz#56bddb36067e73e661e427a1b815a18b70dddfa8"
-  integrity sha512-BEipZXirUlq0NawGa1r5QOPUyvBqbjFMX9jj6njsE9nDgqkBfrw9zLLan1fNzkgzDualgQR9uswgrF7/FOC6jA==
+"@igloo-ui/tokens@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@igloo-ui/tokens/-/tokens-0.2.0.tgz#8f1c560b819c87e23952158c4a4dfb2823d5aa29"
+  integrity sha512-7vH9c7f3P33q3tOEWXwwSPJLmmJ8JOKwgHa+HGypXZBAVIZQ0yUgiOXtYhM9VZDpHQw307t/2RM00u8FXUNv4Q==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
