@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.6.2
+
+### Patch Changes
+
+- 9e18a44: Remove reference to `@igloo-ui/tokens`
+
 ## 0.6.1
 
 ### Patch Changes
