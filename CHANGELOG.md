@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.6.3
+
+### Patch Changes
+
+- f9bf352: fix: The Solid icons with a border cause problems with the color. To fix this issue the icons have been transformed into outline.
+
 ## 0.6.2
 
 ### Patch Changes
