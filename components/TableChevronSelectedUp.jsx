@@ -15,7 +15,7 @@ import './styles/icon.css';
  * @param {string} [props.ariaLabel] - the label for accessibility
  */
 const TableChevronSelectedUp = ({size, ariaLabel, className, ...other}) => {
-const svgData = {"16":"<svg width=\"16\" height=\"16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.823 6.177 4.427 9.573a.25.25 0 0 0 .177.427h6.792a.25.25 0 0 0 .177-.427L8.177 6.177a.25.25 0 0 0-.354 0Z\" fill=\"#233043\" stroke=\"#233043\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"}
+const svgData = {"16":"<svg width=\"16\" height=\"16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.604 10.75c-.891 0-1.337-1.077-.708-1.707l3.397-3.397a1 1 0 0 1 1.414 0l-.497.497.497-.497 3.397 3.397c.63.63.183 1.707-.707 1.707H4.603Z\" fill=\"#233043\"/></svg>"}
 const props = getSvgProps({ size, ariaLabel, className, ...other });
 
 if (svgData[props.iconSize] === undefined) {
