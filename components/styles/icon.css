@@ -3,4 +3,6 @@
   vertical-align: text-bottom;
   user-select: none;
   overflow: hidden;
+  /* fix the issue with the strokes vs fill  */
+  fill: none !important;
 }
