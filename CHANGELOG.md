@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.6.5
+
+### Patch Changes
+
+- 9309c22: Fix the size of small solid metrics icons
+
 ## 0.6.4
 
 ### Patch Changes
