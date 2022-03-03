@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.6.6
+
+### Patch Changes
+
+- 651fcbf: Add Sparkles icon
+
 ## 0.6.5
 
 ### Patch Changes
