@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 0.7.0
+
+### Minor Changes
+
+- b10c260: Add new expand icon
+
 ## 0.6.6
 
 ### Patch Changes
