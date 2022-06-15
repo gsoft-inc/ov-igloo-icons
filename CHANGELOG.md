@@ -1,5 +1,16 @@
 # @igloo-ui/icons
 
+## 0.7.1
+
+### Patch Changes
+
+- d81d59d: add new icons
+  - Grid
+  - Rewind
+  - ShortArrowLeft
+  - ShortArrowRight
+  - CloseEye
+
 ## 0.7.0
 
 ### Minor Changes
