@@ -2,4 +2,9 @@
 "@igloo-ui/icons": patch
 ---
 
-add Grid and Rewind icon
+add new icons 
+- Grid 
+- Rewind
+- ShortArrowLeft
+- ShortArrowRight
+- CloseEye
