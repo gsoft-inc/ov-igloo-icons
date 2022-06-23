@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.0.0
+
+### Major Changes
+
+- 88b8a68: BRAKING CHANGE the `RemoveSolid` icon change and adding a new `CloseSolid`
+
 ## 0.7.1
 
 ### Patch Changes
