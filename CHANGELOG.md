@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.1.0
+
+### Minor Changes
+
+- 9b33257: fix mistake with arrow up and down
+
 ## 1.0.0
 
 ### Major Changes
