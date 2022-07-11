@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.1.1
+
+### Patch Changes
+
+- 1ea5731: fix: replace non subtracted icon by the correct shape
+
 ## 1.1.0
 
 ### Minor Changes
