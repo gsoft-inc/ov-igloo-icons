@@ -1,5 +1,21 @@
 # @igloo-ui/icons
 
+## 1.2.0
+
+### Minor Changes
+
+- 1789e3c: add new icons
+
+  | Name      | Size (px)  |
+  | --------- | ---------- |
+  | Audio     | 16, 24, 32 |
+  | AudioOff  | 16, 24, 32 |
+  | Pause     | 16, 24, 32 |
+  | Play      | 16, 24, 32 |
+  | StartOver | 16, 24, 32 |
+  | Webcam    | 16, 24, 32 |
+  | WebcamOff | 16, 24, 32 |
+
 ## 1.1.1
 
 ### Patch Changes
