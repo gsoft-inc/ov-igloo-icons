@@ -4,7 +4,7 @@
   "description": "A set of icons handcrafted by Officevibe",
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "build": "yarn clean && node build.js && yarn babel",
     "babel": "babel components --out-dir dist --copy-files",
     "deploy": "yarn build-storybook && gh-pages -d storybook-static",
@@ -62,6 +62,7 @@
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rimraf": "3.0.2",
     "svgo": "^2.7.0"
   },
   "commitlint": {
