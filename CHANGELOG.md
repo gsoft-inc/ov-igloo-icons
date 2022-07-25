@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.3.0
+
+### Minor Changes
+
+- a5f3bed: Add Sprout icon and fix Windows tooling
+
 ## 1.2.1
 
 ### Patch Changes
