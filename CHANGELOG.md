@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.2.1
+
+### Patch Changes
+
+- 9d73e7c: Fix small Step2Solid background not transparent
+
 ## 1.2.0
 
 ### Minor Changes
