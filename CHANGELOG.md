@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.4.0
+
+### Minor Changes
+
+- baed555: feat: add Substract icon
+
 ## 1.3.0
 
 ### Minor Changes
