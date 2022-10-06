@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.5.0
+
+### Minor Changes
+
+- 559ac2d: Add newFeedback icon
+
 ## 1.4.0
 
 ### Minor Changes
