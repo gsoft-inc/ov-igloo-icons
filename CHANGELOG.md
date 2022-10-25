@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.6.0
+
+### Minor Changes
+
+- dda19d5: Add AddReaction icon
+
 ## 1.5.0
 
 ### Minor Changes
