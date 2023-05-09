@@ -1,12 +1,13 @@
 name: Release
 
-permissions:
-  pull-requests: write
-
 on:
   push:
     branches:
       - main
+
+permissions:
+  actions: write
+  pull-requests: write
 
 jobs:
   lint:
