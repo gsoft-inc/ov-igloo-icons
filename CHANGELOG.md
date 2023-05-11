@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.7.0
+
+### Minor Changes
+
+- aceae60: Add Event icon
+
 ## 1.6.0
 
 ### Minor Changes
