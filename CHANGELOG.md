@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.8.0
+
+### Minor Changes
+
+- 874222c: Add Move icon
+
 ## 1.7.0
 
 ### Minor Changes
