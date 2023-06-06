@@ -1,5 +1,5 @@
 ---
-'@igloo-ui/icons': patch
+'@igloo-ui/icons': minor
 ---
 
 Add Move icon
