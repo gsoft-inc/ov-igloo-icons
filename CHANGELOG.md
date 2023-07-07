@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.9.0
+
+### Minor Changes
+
+- 78a2df1: Add `viewbox` tag on icon
+
 ## 1.8.0
 
 ### Minor Changes
