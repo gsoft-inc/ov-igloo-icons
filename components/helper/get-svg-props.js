@@ -14,7 +14,7 @@ export const getSvgProps = ({ size, ariaLabel, className, ...other }) => {
         const svgProps = attributesToProps(domNode.attribs);
         const props = { ...svgProps, className: classes, ...other };
         return (
-          <svg {...props}>
+          <svg viewBox={`0 0 ${domNode.attribs.width} ${domNode.attribs.height}`} {...props}>
             {ariaLabel && <title>{ariaLabel}</title>}
             {domToReact(domNode.children, options)}
           </svg>

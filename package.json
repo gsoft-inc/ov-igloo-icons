@@ -13,8 +13,8 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "yarn build && changeset publish",
-    "storybook": "start-storybook -s public -p 6006 --no-manager-cache",
-    "build-storybook": "build-storybook -s public",
+    "storybook": "storybook dev -s public",
+    "build-storybook": "storybook build -s public",
     "chromatic": "npx chromatic --project-token=eb3412a9c05f"
   },
   "repository": {
@@ -44,10 +44,11 @@
     "@changesets/cli": "^2.26.1",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "@storybook/addon-actions": "^6.5.9",
-    "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
-    "@storybook/react": "^6.5.9",
+    "@storybook/addon-actions": "^7.0.26",
+    "@storybook/addon-essentials": "^7.0.26",
+    "@storybook/addon-links": "^7.0.26",
+    "@storybook/react": "^7.0.26",
+    "@storybook/react-webpack5": "^7.0.26",
     "@svgr/core": "^5.5.0",
     "@svgr/plugin-jsx": "^5.5.0",
     "@svgr/plugin-prettier": "^5.5.0",
@@ -57,13 +58,15 @@
     "chromatic": "^6.0.4",
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-storybook": "^0.6.12",
     "gh-pages": "^3.2.3",
     "lodash.merge": "^4.6.2",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "3.0.2",
-    "svgo": "^2.7.0"
+    "storybook": "^7.0.26",
+    "svgo": "^2.8.0"
   },
   "commitlint": {
     "extends": [
