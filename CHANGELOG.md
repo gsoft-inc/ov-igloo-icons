@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.10.0
+
+### Minor Changes
+
+- 49a50c3: Add Reviews icon
+
 ## 1.9.0
 
 ### Minor Changes
