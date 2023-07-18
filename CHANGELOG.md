@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.11.0
+
+### Minor Changes
+
+- 19c326c: Add Performance icon
+
 ## 1.10.0
 
 ### Minor Changes
