@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.12.1
+
+### Patch Changes
+
+- 27df21c: re-import Lock and Performance icons by removing clip path
+
 ## 1.12.0
 
 ### Minor Changes
