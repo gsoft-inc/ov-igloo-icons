@@ -1,5 +1,11 @@
 # @igloo-ui/icons
 
+## 1.12.2
+
+### Patch Changes
+
+- a18ab81: Update fill color in CollapseLeft and CollapseRight icons
+
 ## 1.12.1
 
 ### Patch Changes
