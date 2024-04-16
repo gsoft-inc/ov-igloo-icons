@@ -1,5 +1,12 @@
 # @igloo-ui/icons
 
+## 1.12.3
+
+### Patch Changes
+
+- b54080f: Deprecated defaultProps in favor of setting default props in the component declaration
+- 9bd0e1f: Added a layer rule for better css specificity managment
+
 ## 1.12.2
 
 ### Patch Changes
