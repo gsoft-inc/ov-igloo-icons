@@ -32,9 +32,4 @@ NewFeedback.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-NewFeedback.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default NewFeedback;

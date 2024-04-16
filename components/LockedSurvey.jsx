@@ -32,9 +32,4 @@ LockedSurvey.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-LockedSurvey.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default LockedSurvey;

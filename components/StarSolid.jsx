@@ -32,9 +32,4 @@ StarSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-StarSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default StarSolid;

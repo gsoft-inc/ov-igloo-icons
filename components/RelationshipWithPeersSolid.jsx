@@ -32,9 +32,4 @@ RelationshipWithPeersSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-RelationshipWithPeersSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default RelationshipWithPeersSolid;

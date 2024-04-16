@@ -32,9 +32,4 @@ OrderedList.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-OrderedList.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default OrderedList;

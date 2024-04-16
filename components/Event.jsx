@@ -32,9 +32,4 @@ Event.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Event.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Event;

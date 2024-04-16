@@ -32,9 +32,4 @@ Sort.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Sort.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Sort;

@@ -32,9 +32,4 @@ Expand.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Expand.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Expand;

@@ -32,9 +32,4 @@ AddCalendar.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-AddCalendar.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default AddCalendar;

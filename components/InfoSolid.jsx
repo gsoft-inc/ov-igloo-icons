@@ -32,9 +32,4 @@ InfoSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-InfoSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default InfoSolid;

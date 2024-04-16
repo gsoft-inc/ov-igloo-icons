@@ -32,9 +32,4 @@ Play.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Play.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Play;

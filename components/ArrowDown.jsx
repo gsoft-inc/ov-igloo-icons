@@ -32,9 +32,4 @@ ArrowDown.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ArrowDown.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ArrowDown;

@@ -32,9 +32,4 @@ Eye.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Eye.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Eye;

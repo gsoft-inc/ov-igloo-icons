@@ -32,9 +32,4 @@ Lock.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Lock.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Lock;

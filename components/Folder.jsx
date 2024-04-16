@@ -32,9 +32,4 @@ Folder.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Folder.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Folder;

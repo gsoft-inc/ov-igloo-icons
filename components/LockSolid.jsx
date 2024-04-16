@@ -32,9 +32,4 @@ LockSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-LockSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default LockSolid;

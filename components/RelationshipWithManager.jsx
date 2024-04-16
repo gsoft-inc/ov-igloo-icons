@@ -32,9 +32,4 @@ RelationshipWithManager.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-RelationshipWithManager.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default RelationshipWithManager;

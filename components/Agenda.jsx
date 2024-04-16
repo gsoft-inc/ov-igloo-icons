@@ -32,9 +32,4 @@ Agenda.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Agenda.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Agenda;

@@ -32,9 +32,4 @@ Bold.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Bold.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Bold;

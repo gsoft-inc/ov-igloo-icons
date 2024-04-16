@@ -32,9 +32,4 @@ Pause.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Pause.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Pause;

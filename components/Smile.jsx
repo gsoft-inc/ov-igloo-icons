@@ -32,9 +32,4 @@ Smile.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Smile.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Smile;

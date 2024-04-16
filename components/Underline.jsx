@@ -32,9 +32,4 @@ Underline.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Underline.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Underline;

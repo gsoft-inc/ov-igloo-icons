@@ -32,9 +32,4 @@ Move.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Move.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Move;

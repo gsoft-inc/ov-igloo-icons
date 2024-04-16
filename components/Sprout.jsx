@@ -32,9 +32,4 @@ Sprout.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Sprout.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Sprout;

@@ -32,9 +32,4 @@ Reviews.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Reviews.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Reviews;

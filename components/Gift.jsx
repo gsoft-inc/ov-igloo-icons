@@ -32,9 +32,4 @@ Gift.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Gift.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Gift;

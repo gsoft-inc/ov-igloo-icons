@@ -32,9 +32,4 @@ AddSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-AddSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default AddSolid;

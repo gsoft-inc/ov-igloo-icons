@@ -32,9 +32,4 @@ ClosedEye.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ClosedEye.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ClosedEye;

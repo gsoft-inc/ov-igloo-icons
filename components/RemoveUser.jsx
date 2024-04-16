@@ -32,9 +32,4 @@ RemoveUser.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-RemoveUser.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default RemoveUser;

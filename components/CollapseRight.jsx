@@ -32,9 +32,4 @@ CollapseRight.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-CollapseRight.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default CollapseRight;

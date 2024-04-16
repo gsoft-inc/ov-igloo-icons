@@ -32,9 +32,4 @@ BigChevronLeftSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-BigChevronLeftSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default BigChevronLeftSolid;

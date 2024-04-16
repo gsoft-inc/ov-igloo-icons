@@ -42,11 +42,6 @@ ${name}.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-${name}.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ${name};
 `;
 };

@@ -32,9 +32,4 @@ HelpSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-HelpSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default HelpSolid;

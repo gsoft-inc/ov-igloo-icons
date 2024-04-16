@@ -32,9 +32,4 @@ Engagement.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Engagement.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Engagement;

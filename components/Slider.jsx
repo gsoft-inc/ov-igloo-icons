@@ -32,9 +32,4 @@ Slider.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Slider.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Slider;

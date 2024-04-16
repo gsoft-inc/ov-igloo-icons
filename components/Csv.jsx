@@ -32,9 +32,4 @@ Csv.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Csv.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Csv;

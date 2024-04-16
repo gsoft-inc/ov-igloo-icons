@@ -32,9 +32,4 @@ User.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-User.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default User;

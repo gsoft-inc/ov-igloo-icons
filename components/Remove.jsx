@@ -32,9 +32,4 @@ Remove.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Remove.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Remove;

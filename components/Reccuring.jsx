@@ -32,9 +32,4 @@ Reccuring.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Reccuring.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Reccuring;

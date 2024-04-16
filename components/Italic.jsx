@@ -32,9 +32,4 @@ Italic.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Italic.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Italic;

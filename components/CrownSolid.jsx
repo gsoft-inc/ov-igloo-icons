@@ -32,9 +32,4 @@ CrownSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-CrownSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default CrownSolid;

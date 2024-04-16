@@ -32,9 +32,4 @@ TreeSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-TreeSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default TreeSolid;

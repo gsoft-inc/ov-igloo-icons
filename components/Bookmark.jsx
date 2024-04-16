@@ -32,9 +32,4 @@ Bookmark.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Bookmark.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Bookmark;

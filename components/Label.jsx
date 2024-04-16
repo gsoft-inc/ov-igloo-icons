@@ -32,9 +32,4 @@ Label.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Label.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Label;

@@ -32,9 +32,4 @@ Segment.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Segment.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Segment;

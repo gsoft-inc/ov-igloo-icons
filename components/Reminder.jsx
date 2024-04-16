@@ -32,9 +32,4 @@ Reminder.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Reminder.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Reminder;

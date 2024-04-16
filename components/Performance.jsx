@@ -32,9 +32,4 @@ Performance.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Performance.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Performance;

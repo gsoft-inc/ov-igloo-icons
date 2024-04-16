@@ -32,9 +32,4 @@ Team.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Team.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Team;

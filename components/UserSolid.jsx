@@ -32,9 +32,4 @@ UserSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-UserSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default UserSolid;

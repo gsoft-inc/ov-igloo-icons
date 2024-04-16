@@ -32,9 +32,4 @@ Recognition.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Recognition.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Recognition;

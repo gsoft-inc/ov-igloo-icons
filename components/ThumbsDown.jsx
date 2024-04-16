@@ -32,9 +32,4 @@ ThumbsDown.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ThumbsDown.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ThumbsDown;

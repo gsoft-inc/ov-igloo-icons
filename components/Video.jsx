@@ -32,9 +32,4 @@ Video.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Video.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Video;

@@ -32,9 +32,4 @@ BarGraph.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-BarGraph.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default BarGraph;

@@ -32,9 +32,4 @@ Goal.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Goal.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Goal;

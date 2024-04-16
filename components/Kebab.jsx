@@ -32,9 +32,4 @@ Kebab.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Kebab.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Kebab;

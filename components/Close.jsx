@@ -32,9 +32,4 @@ Close.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Close.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Close;

@@ -32,9 +32,4 @@ NewSuggestion.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-NewSuggestion.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default NewSuggestion;

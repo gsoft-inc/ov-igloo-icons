@@ -32,9 +32,4 @@ Search.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Search.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Search;

@@ -32,9 +32,4 @@ TalkBubble.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-TalkBubble.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default TalkBubble;

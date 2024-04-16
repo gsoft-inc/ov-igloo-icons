@@ -32,9 +32,4 @@ Step4Solid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Step4Solid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Step4Solid;

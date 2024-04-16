@@ -32,9 +32,4 @@ Star.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Star.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Star;

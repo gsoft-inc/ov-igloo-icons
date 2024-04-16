@@ -32,9 +32,4 @@ ArrowUp.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ArrowUp.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ArrowUp;

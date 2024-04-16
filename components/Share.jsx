@@ -32,9 +32,4 @@ Share.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Share.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Share;

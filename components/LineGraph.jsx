@@ -32,9 +32,4 @@ LineGraph.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-LineGraph.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default LineGraph;

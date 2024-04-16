@@ -32,9 +32,4 @@ Survey.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Survey.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Survey;

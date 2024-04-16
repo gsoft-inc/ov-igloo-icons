@@ -32,9 +32,4 @@ StartOver.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-StartOver.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default StartOver;

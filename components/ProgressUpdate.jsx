@@ -32,9 +32,4 @@ ProgressUpdate.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ProgressUpdate.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ProgressUpdate;

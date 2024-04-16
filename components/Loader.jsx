@@ -32,9 +32,4 @@ Loader.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Loader.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Loader;

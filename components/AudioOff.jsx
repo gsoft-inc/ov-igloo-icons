@@ -32,9 +32,4 @@ AudioOff.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-AudioOff.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default AudioOff;

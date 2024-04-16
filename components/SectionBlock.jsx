@@ -32,9 +32,4 @@ SectionBlock.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-SectionBlock.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default SectionBlock;

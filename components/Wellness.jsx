@@ -32,9 +32,4 @@ Wellness.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Wellness.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Wellness;

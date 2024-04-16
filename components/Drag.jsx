@@ -32,9 +32,4 @@ Drag.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Drag.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Drag;

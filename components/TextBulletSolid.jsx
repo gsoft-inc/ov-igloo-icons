@@ -32,9 +32,4 @@ TextBulletSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-TextBulletSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default TextBulletSolid;

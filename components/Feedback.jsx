@@ -32,9 +32,4 @@ Feedback.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Feedback.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Feedback;

@@ -32,9 +32,4 @@ Alert.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Alert.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Alert;

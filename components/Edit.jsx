@@ -32,9 +32,4 @@ Edit.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Edit.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Edit;

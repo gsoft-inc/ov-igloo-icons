@@ -32,9 +32,4 @@ RemoveCalendar.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-RemoveCalendar.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default RemoveCalendar;

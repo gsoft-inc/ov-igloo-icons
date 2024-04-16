@@ -32,9 +32,4 @@ SendSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-SendSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default SendSolid;

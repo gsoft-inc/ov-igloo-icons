@@ -32,9 +32,4 @@ Calendar.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Calendar.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Calendar;

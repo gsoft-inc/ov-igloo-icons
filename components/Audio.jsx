@@ -32,9 +32,4 @@ Audio.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Audio.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Audio;

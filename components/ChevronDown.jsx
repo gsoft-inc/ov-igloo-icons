@@ -32,9 +32,4 @@ ChevronDown.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ChevronDown.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ChevronDown;

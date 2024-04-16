@@ -32,9 +32,4 @@ Webcam.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Webcam.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Webcam;

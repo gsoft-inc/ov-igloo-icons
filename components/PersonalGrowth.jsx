@@ -32,9 +32,4 @@ PersonalGrowth.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-PersonalGrowth.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default PersonalGrowth;

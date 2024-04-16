@@ -32,9 +32,4 @@ StickyNote.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-StickyNote.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default StickyNote;

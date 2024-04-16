@@ -32,9 +32,4 @@ Minus.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Minus.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Minus;

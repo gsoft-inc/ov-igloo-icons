@@ -32,9 +32,4 @@ TableChevronSelectedUp.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-TableChevronSelectedUp.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default TableChevronSelectedUp;

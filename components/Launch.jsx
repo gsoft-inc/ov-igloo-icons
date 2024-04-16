@@ -32,9 +32,4 @@ Launch.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Launch.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Launch;

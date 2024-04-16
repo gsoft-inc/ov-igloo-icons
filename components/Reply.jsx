@@ -32,9 +32,4 @@ Reply.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Reply.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Reply;

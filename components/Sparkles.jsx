@@ -32,9 +32,4 @@ Sparkles.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Sparkles.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Sparkles;

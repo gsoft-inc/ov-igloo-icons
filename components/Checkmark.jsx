@@ -32,9 +32,4 @@ Checkmark.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Checkmark.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Checkmark;

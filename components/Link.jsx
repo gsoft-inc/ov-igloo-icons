@@ -32,9 +32,4 @@ Link.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Link.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Link;

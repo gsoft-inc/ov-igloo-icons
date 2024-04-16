@@ -32,9 +32,4 @@ Plus.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Plus.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Plus;

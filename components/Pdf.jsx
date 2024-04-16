@@ -32,9 +32,4 @@ Pdf.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Pdf.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Pdf;

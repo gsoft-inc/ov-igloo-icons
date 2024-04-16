@@ -32,9 +32,4 @@ Clock.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Clock.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Clock;

@@ -32,9 +32,4 @@ Help.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Help.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Help;

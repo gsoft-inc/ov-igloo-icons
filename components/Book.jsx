@@ -32,9 +32,4 @@ Book.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Book.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Book;

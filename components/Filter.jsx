@@ -32,9 +32,4 @@ Filter.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Filter.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Filter;

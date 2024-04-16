@@ -32,9 +32,4 @@ LogOut.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-LogOut.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default LogOut;

@@ -32,9 +32,4 @@ Copy.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Copy.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Copy;

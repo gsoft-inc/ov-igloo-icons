@@ -32,9 +32,4 @@ Refresh.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Refresh.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Refresh;

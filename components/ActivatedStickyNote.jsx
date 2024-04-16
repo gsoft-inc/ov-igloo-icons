@@ -32,9 +32,4 @@ ActivatedStickyNote.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ActivatedStickyNote.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ActivatedStickyNote;

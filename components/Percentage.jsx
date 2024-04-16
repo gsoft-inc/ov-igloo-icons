@@ -32,9 +32,4 @@ Percentage.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Percentage.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Percentage;

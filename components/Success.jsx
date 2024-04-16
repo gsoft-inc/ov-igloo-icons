@@ -32,9 +32,4 @@ Success.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Success.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Success;

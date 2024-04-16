@@ -32,9 +32,4 @@ Portrait.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Portrait.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Portrait;

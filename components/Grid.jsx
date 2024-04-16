@@ -32,9 +32,4 @@ Grid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Grid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Grid;

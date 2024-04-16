@@ -32,9 +32,4 @@ EmailSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-EmailSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default EmailSolid;

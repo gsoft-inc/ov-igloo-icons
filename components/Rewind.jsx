@@ -32,9 +32,4 @@ Rewind.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Rewind.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Rewind;

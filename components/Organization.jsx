@@ -32,9 +32,4 @@ Organization.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Organization.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Organization;

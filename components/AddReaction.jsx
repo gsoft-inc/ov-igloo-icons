@@ -32,9 +32,4 @@ AddReaction.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-AddReaction.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default AddReaction;

@@ -32,9 +32,4 @@ Note.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Note.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Note;

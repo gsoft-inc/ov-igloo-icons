@@ -32,9 +32,4 @@ Archive.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Archive.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Archive;

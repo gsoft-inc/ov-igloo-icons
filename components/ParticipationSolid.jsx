@@ -32,9 +32,4 @@ ParticipationSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ParticipationSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ParticipationSolid;

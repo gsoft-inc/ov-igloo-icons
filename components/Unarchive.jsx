@@ -32,9 +32,4 @@ Unarchive.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Unarchive.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Unarchive;

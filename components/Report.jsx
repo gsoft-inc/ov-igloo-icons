@@ -32,9 +32,4 @@ Report.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Report.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Report;

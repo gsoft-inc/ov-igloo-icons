@@ -32,9 +32,4 @@ ShortArrowLeft.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ShortArrowLeft.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ShortArrowLeft;

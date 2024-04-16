@@ -32,9 +32,4 @@ Shield.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Shield.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Shield;

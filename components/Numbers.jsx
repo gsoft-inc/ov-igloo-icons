@@ -32,9 +32,4 @@ Numbers.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Numbers.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Numbers;

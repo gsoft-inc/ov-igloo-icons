@@ -32,9 +32,4 @@ PinSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-PinSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default PinSolid;

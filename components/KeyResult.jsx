@@ -32,9 +32,4 @@ KeyResult.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-KeyResult.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default KeyResult;

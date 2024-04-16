@@ -32,9 +32,4 @@ Download.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Download.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Download;

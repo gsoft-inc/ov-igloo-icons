@@ -32,9 +32,4 @@ Praise.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Praise.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Praise;

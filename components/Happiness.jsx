@@ -32,9 +32,4 @@ Happiness.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Happiness.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Happiness;

@@ -32,9 +32,4 @@ AmbassadorshipSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-AmbassadorshipSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default AmbassadorshipSolid;

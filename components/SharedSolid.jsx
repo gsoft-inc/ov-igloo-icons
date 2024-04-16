@@ -32,9 +32,4 @@ SharedSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-SharedSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default SharedSolid;

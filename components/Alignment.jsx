@@ -32,9 +32,4 @@ Alignment.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Alignment.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Alignment;

@@ -32,9 +32,4 @@ TeamSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-TeamSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default TeamSolid;

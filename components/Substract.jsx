@@ -32,9 +32,4 @@ Substract.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Substract.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Substract;

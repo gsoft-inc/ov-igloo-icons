@@ -32,9 +32,4 @@ ENps.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ENps.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ENps;

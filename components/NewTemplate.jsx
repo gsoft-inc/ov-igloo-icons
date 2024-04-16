@@ -32,9 +32,4 @@ NewTemplate.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-NewTemplate.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default NewTemplate;

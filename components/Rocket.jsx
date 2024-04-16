@@ -32,9 +32,4 @@ Rocket.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Rocket.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Rocket;

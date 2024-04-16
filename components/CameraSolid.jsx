@@ -32,9 +32,4 @@ CameraSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-CameraSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default CameraSolid;

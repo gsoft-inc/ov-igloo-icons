@@ -32,9 +32,4 @@ Hamburger.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Hamburger.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Hamburger;

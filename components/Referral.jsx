@@ -32,9 +32,4 @@ Referral.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Referral.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Referral;

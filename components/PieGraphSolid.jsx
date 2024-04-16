@@ -32,9 +32,4 @@ PieGraphSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-PieGraphSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default PieGraphSolid;

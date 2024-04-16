@@ -32,9 +32,4 @@ Bento.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Bento.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Bento;

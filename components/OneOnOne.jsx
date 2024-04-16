@@ -32,9 +32,4 @@ OneOnOne.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-OneOnOne.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default OneOnOne;

@@ -32,9 +32,4 @@ Email.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Email.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Email;

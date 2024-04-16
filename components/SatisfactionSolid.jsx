@@ -32,9 +32,4 @@ SatisfactionSolid.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-SatisfactionSolid.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default SatisfactionSolid;

@@ -32,9 +32,4 @@ Strikethrough.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-Strikethrough.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default Strikethrough;

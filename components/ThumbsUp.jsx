@@ -32,9 +32,4 @@ ThumbsUp.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-ThumbsUp.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default ThumbsUp;

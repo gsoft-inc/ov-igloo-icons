@@ -32,9 +32,4 @@ UnorderedList.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-UnorderedList.defaultProps = {
-  size: "medium",
-  ariaLabel: "",
-};
-
 export default UnorderedList;
