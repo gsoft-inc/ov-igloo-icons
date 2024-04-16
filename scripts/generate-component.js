@@ -24,7 +24,7 @@ import './styles/icon.css';
  * @param {('small'|'medium'|'large')} [props.size=small] - the icon size
  * @param {string} [props.ariaLabel] - the label for accessibility
  */
-const ${name} = ({size, ariaLabel, className, ...other}) => {
+const ${name} = ({size = "medium", ariaLabel="", className, ...other}) => {
 const svgData = ${JSON.stringify(code)}
 const props = getSvgProps({ size, ariaLabel, className, ...other });
 
