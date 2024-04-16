@@ -14,7 +14,7 @@ import './styles/icon.css';
  * @param {('small'|'medium'|'large')} [props.size=small] - the icon size
  * @param {string} [props.ariaLabel] - the label for accessibility
  */
-const TableChevronSelectedDown = ({size = "medium", ariaLabel="", className, ...other}) => {
+const TableChevronSelectedDown = ({size = "medium", ariaLabel = "", className, ...other}) => {
 const svgData = {"16":"<svg width=\"16\" height=\"16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.604 5.25c-.891 0-1.337 1.077-.708 1.707l3.397 3.397a1 1 0 0 0 1.414 0l-.497-.497.497.497 3.397-3.397c.63-.63.183-1.707-.707-1.707H4.603Z\" fill=\"#233043\"/></svg>"}
 const props = getSvgProps({ size, ariaLabel, className, ...other });
 
